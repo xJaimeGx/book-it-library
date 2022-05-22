@@ -1,0 +1,27 @@
+{
+  "name": "book-it-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xJaimeGx/book-it-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xJaimeGx/book-it-library/issues"
+  },
+  "homepage": "https://github.com/xJaimeGx/book-it-library#readme",
+  "devDependencies": {
+    "concurrently": "^7.2.0"
+  }
+}
